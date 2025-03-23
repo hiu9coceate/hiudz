@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="main.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<div class=" d-flex justify-content-between top">
+
+  <div class="baga">
+    <svg xmlns="http://www.w3.org/2000/svg" height="2rem" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+      <path fill-rule="evenodd"
+        d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+    </svg>
+    <img height="50vh"
+      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAX4AAACECAMAAACgerAFAAAAkFBMVEX///91dniqqqre3t78/Pxub3FzdHb///1wcXN3eHr29vZ1dnqgoaODhIZrbG5wcHDW19mxsbPu7/C8vcDBw8ONjo/N0M57fH6YmZppbGrd3d3BwcGIiIpramqVlZXm5uZiY2V1d3XBwsajpaTP0c57fIG1tbVeXmDo6ulpam9/gYCHiYeanZvR0dSwsq/p6uxLuYwFAAAOGklEQVR4nO1cDXuiuhIGDDGgBEQRqiBa97jWLev//3d3JqCFJFhs7e6zt3n3bM82YjJ5M5nMR9SyDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAz+JZDmr4HBNwQxuv/3EC8Pq78tw3eEUPpyGsxi/Pf4Cu1JQMZyI2n9lNuJrr1nk3VbxxYOROD/gyAGurF7r0Iqj8A8Cf6Vm63eoR9sI0DqeMaSERJz6Rpn38OSIlXfkd3T3iu9xD/Qr671DRDtYiuPKE3j+qf0So/2aVfwcyBWlP6cNp2SeLRcLKPzfWNohOrlYlDPF7UfqPzwvE98v6dv0v6XRs3vwsPPR3Lg20O9c+N1zvgL55zl81K3U63x6nXawX62LIlGLvh1ja+XynjlVI9R993L1/3+9cfQOUSn9HRa6MlB0mc4gq9hnyxgnH0pL8MRWzVCHh7uoDgurwXznwPuMsYmAPaSOrFOV5Zbt4OwCNNppe042zKXR1Ij7DWphwZbqZN5EYbFYugkMh7SMOnVfj/nLueOZktGYfgUPslSWqOnMAxVIfnmkeqPxv6Zs1QQTbIt516eJP+9bN3JhBZ5pWxXoD+kng1/LoB/A8nTWGPqp6FtU2ViVsTxXdTrwKau9OTc9Wz3ecAccNQzYx61+ajvIT9hMEYYtSUUh0X9AlOkLMPdbgfid6X0WKbM8nOoOGWodyTOfyYHYUf8+DlxXUrD0BEHc2s4pB/mSdkVlKL4PDirZ18//dDe6qLuh1fddwv6h2r/bAt92oIcLYBleD0M4nYjmhGHQ7stL31NP3QoS/lY7QdrnzMmjt04p8/+tWt/cUKai4Nk6ZB+UAk7uMJzYWIeZYG6sW/Rn+aBhDTS0D9A+xHnlAKJoBZ96l/T7xVOuxGGi1x8Vw/9O0+WMUinwwQaihm3X4SNyQI8JIHtxukvfxUwp3DZfbzWfpbFVxyrDDb+xOMHxXm+Qb/rxAr87mNzMICD6IdRD3xCJ7Y9cWc9z9T079D8tBEnaLQmPfSHMM2zLGVf2PIhnMH0JOiwrfOLW3AJuvxNAVYlPWNQcoXQfpt1dWAVuGglj3fQz/t4esMd9MfBhE3+C9BlUB0tAaQf9pwXnnwxw+aNTrGzYeEmWvrtUK/qD6T/wEFtcbQsVro9nkAwPrVU+t2WXGhzVmCnbC5tlH76n4B+57rOY53nDY2C/mG2/9n1GJs/gxK4B0vLT03/BDapQ2r68W9lU7DwNf2SFKVre+7rmzg3ZP04/Jx5wjVc69I9Cxf5P96mX0x2zwWjZJjn82j6SY7O2PmcMo8FvvaR2viAPy0EGtcpBZi9DSbG/mv0r1zwGkFgP1IzJhD1b4ABsOnvar9VgbDh61Dj09B/C3fRX21tYc2mqP5rrXFA/9JON67n8VN8SZzAubd7SpIB2v9FmIPblTbpKMVzGVvPLyDZxu+0Kdov6OcedRWv7w/R72dAOwOfB20gy7Xqj/TTtAR199x9k9KIYEV2ux9796/RP+UeS/peHFtn2Jf27thpU45eXLQ1B+dtr/TeTz9zbh9g99AfgYcaZhgfZnBeFtoIHI0P9fwlyInxHapanLjUK36TrJ/+rHOOEF2+8TMA6+K5m75Xx2gcJ1446rSh49kxPrhtMtjVxXpo1Pvkea4jUttIczOj7ua7h360OU8/sJ/oCdyVjU79a/rj8Z5Tz83P2LQvYBsHPsl4H/3swU6+TijWT/+YTN2J99ROe9VJB1n7FxC8UAx5BtK/8zSOZye9MZB+UanAcPeXyNmTX+gu6ryImv6jFe921HvBfRqhcCCdn7Fe+rN3QpNPwk/AWPYbH6TfU+mH46ujFv7aY6DPGyWbe4N+N1tIKD+q/Q4TB66Foy+g60Kns432WyA+xIhuZfknUCM+w53bSz9N8zwP8jcE8/fFuQP1gdRXQQB1Au2nT8tOW237iX9BudgUMDWqSXfdsP025W8oEOvu2APpBxNOYfQgbhLmmHwINaFXo/1jAuYHwtzUPzztIOCMrfEN+m0I5ur/6qyUvX0/WBwMTMNuQHNYbPUVdggsD3O7m3mJEW6d8JzgHwqnGXid4VrtoI9+iKYpcHABJmPssEv0cOMzx5DjcHHLf4c01XlVV+234jwEZUlSSu1iZQn6RcpNp/1tEVHKAbH6XZiC4wlhlz6NAZqVItVdZQLbD0EOFRApQfjFLuy1posb9GO/V0BH9EP0w5hxgFKUF/pHYmXVCP6NfmtZYIoTnhL53Fv0Qztz3VZSdvuOu3wfCOYcbN4Tp1uYnQEVyDtJWmH7cQEu1HloR7JS18Mt+hlTjM8HbD9Ye1SgFivgSnt8rkzoSj+0TwtRbkCv5zb9LMX6VtbC4OrPEBCIPEDxgp4aKbEccNP4tPuiSDhfLDcqke3VdUm1jxv0s+moi1XXBA6lH/MGlFXncwk4AxZoG4Oj/GCLfuIHIZpPuqpL7Dfoz+RlfGC2UxxVAdgO3lMitUqwPTaXwpgl7AgWNJVPkUnBOokaM1s36dfY5877hx69FcPtl6b/NQhSzP6FSuahZXyIVYHFpGjH39N+Nex6R5x7MQMy3TxWK1UQFYHyYxQfS9rvtqLeIygSeJ2l/l7DffR3MJT+jShW2eztkMTqp1r0bdEPc3MKSpvc3C361TTKo1G6sA2FG6/uqwjYVw/7Nv3EWoEb7XF9nuUP0D/ieApRzGU2ECc6latEHfqJ5QfuRa6/S7+VoQPjriXtx19K8KHh9DlLb2in3ESdCR2yvXZffjn9BA5aOPlZ9zaCTv079IP5wex4PdAg+r8o4Yz2nQHJXJ1mmYN/Q13lXgt4Phf6xd2GxAX93yqlFsSX0196WDWuog4W6A0UUuahq/3g8l1M6t+lHxUB7Lv35PjNIM0LlYteDc0Uo97RfuF448RcXZGvl357CP3r+qaDNO+ONI62bAn+GnUlf61z9LYPURH16mq9gv6xgtti3wlx/6sAfd49/frhjy9VUH+EWcQdDdNYeoMm31+5oG5uIj9p3aj1vk8/YB3Cqir0Ww1z+ON4AsXlym28lfArR53WztHbwY2kA3tV6X/oHTfsjOwLL/R2YZgcRj40+OViysT9i9BTkoe6YuMMIh3qOqr5/yz94NHPr7klX845YtCYUraRvC74bUOb/MBb+8foz3ziv2W3AP33SD8GceQ6BYZSHsahQRLYnIMzDR5FkasWRUc/SfD43arRw+e1Hx7sYpu0nKywuSIi849FFTsV92YujR+in05SBb3p+Y8ChF94IXjME6w5MziJ0XW2mau5/KCr9RJrBMEbpelq8CVDUM5B2o/3t+wOWIv+ZQGbTldcgVAY7Nah03SbfqanH31YRluYuPm7ct+D5mLmaPNyiVzqCVMezHVRHtCPtSoppb7gMDe+kWc3DT2qv+dDe+9DvQkG9GNmqck2Nv8He3B9IkEbo3WNDnAm0JNPusbHtjW53TrhzFcK/RyTsp498epoDohBGdhj6b+ARJnHXxgT+UfO3Xyu05T6hjOYgFY8IszX7CcYhp8b6VzKti6X7y2jr/UTmt+p9cJAhy1XsU38y9G72BbuNoh1/cQpirO++MyYWg+wN92VbZJs+ctLJPs0I3je1Yx/enzmof5kTvk8TTDB7AXZLOqrqo2t0e/ZzFlI749ngIMj3XNbYqt8fkA850AP1bul9uj3TIWzvtxDJQvoZtYTFyzw0UXrTCBzfLf+fj+Kc5S1P3Y0owPW1qP5F1JiyZv4x2N5PjfehX4QMr7xYk/32t/f62HgJ6u03TTK83Yd820ZFOPTfIpG1v5+8b5A+S8Xa2XvWoa4mCA7GtZ1VnK7zkkmlxHfkenCf3/AQ2454e0sCrmx5OjK14PoRNCHXY9eAAMDAwMDA4N/HhpnqO0z9RT3+z+YrrbX/fe03xjlW+BCvlRBflsTQmRPtYd7ovs4FbF6l9DqX5lvhT63v1kW5dVeOnvuGPT00o5EvjGI8uUlrfiHyNqO38pAdIpO/J51xGS89pXxZWt85xUgVpScTtNVu8Vai1RbhV9iYK2m7bQeIfkJkCoZ5LkXnHJH89UQpwCe95T7zKtc3JqMksdWRr4CXykfOdqHMpp26YzEnaCpuA69f+0M73uHaFlFkSzTbFNVVZZW8h4ow2VURZVSkCvdFD9hH+2+ZHIP7fRLLeQiwBG6iWsfr8j7gYe1kLCbiya2/su0HKzMkDXvplMJ0K8/D0ZBjktepbLhewgefZ5/Ff+gf0WlMnCANamSCn5GadfMEFEdV635rP5iifwgtZfU1zpFoyAOwCJVJyU3+qgVeEw3lpjWcu88Bgslszzzcke2JSU7W9N5nI6svVRvJHayyTaJUh2b1XdGZpncU5HB85lSFloFcZk+W5FKfzn9/CwPD7Y+x9FjsColVYdfy3VWTLteI8kXvleSDFZg1bUmxHPW8/lBOWNn9ce1HenKESnDw3q9niuFIaDfqvh5lVqyovqrB8zyQzT/eTRWobQldV4ki8b+SJ4JsfVfRzITu8T3FhKbetsv6Cdg455PHxT8/wNg+5H4OJDoj9Pg0PyUtkvaQz9W5eOpcuOrj/6R+NKezA56grXvAULWhbOMNoFMW8LR98y4UgQO92uEbE1m+Xw+S/POtR3EqBDGR7lduhJ+5zmwPz+HfxngAjpJ4ChHYzQTkRfWvbtR76E+2+TrCNXMaSrzXTcnrp9XPtJ3noswuTyYvMN3z3oZGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGPw5/A/yXfWxluaiZgAAAABJRU5ErkJggg=="
+      alt="">
+  </div>
+
+
+
+
+
+  <div class=" menulogo">
+
+
+
+
+    <input type="text" placeholder="Tìm kiếm 60+ Nhãn hàng, 1000+ sản phẩm làm đẹp và dinh dưỡng" class="oTimKiem"
+      value="">
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search"
+      viewBox="0 0 16 16">
+      <path
+        d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+    </svg>
+
+
+
+
+
+
+  </div>
+
+
+  <div class="DKDN">
+
+    <button type="button" class="btnDKDN">
+      <a class="" href="/member-benefits">Đăng Ký</a>
+    </button>
+
+    <button type="button" class="btnDKDN">
+      Đăng Nhập
+    </button>
+
+    <button class="btnSE">
+
+      <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="btnSE1"
+        viewBox="0 0 16 16">
+        <path
+          d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+      </svg>
+
+    </button >
+
+    <a class="CHDKDN"
+      href="https://identity.oriflame.vn/Account/Login?ReturnUrl=%2Fconnect%2Fauthorize%2Fcallback%3Fclient_id%3DECommerce-V9%26response_type%3Dcode%2520id_token%2520token%26scope%3Dopenid%2520profile%2520offline_access%2520active_directory_profile_simple%2520atp%2520bonuses_api%2520client_app_info%2520IdentityServerApi%2520lmd%2520online_api%2520reporting%2520shipment%2520social_networks_profiles%2520tax%2520trackntrace%2520user_identification%2520user_identity%26state%3DOpenIdConnect.AuthenticationProperties%253DBxHkJ36mYqRWHRd9hIEcq04dvAhF_MoMQv2FcQ8fTm_fYYwLnKoL68TkawhQDnFud1iUnl67Si6k4GakvDea1P5qgjYdLZ4TRdr_4Ta2rA5KpxfueZcCkgb6w1cG4MAl3HZNYV6pftt4In1HeWobUXaBF8zWtHO0-nqcExFjdbTVLAynbWSkhNLM1WL0uwYiLhSh8wwxmwNVcHKej3BWGaD5_u5-QafAjEB33xa2BVR8esTO%26response_mode%3Dform_post%26nonce%3D638783392867325997.ZDBlNjIzN2YtMDkyNS00OTY4LTkwNDctM2YwMDU5NDgzMzk0MmM4NGJkZjEtMzM2Yy00ZmJjLTgwN2UtODU1MzIyY2Q4ZGVl%26acr_values%3D%2520tenant%253Avx%2520LoginProcessType%253AIdentityServerLogin%2520spa%253Atrue%26ui_locales%3Dvi-VX%26redirect_uri%3Dhttps%253A%252F%252Fwww.oriflame.vn%26x-client-SKU%3DID_NET472%26x-client-ver%3D6.35.0.0">
+      <button>
+        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-person"
+          viewBox="0 0 16 16">
+          <path
+            d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z" />
+        </svg>
+      </button>
+    </a>
+
+
+    <button type="button" class="btnGH">
+      <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-bag"
+        viewBox="0 0 16 16">
+        <path
+          d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z">
+        </path>
+      </svg>
+
+    </button>
+<div class="z-2 position-absolute menuGH" >
+    <h3>Lựa chọn sản phẩm</h3>
+    <div class="TTGH">
+      Giỏ hàng của bạn đang trống
+      <button class="btnDGH">
+        đến giỏ hàng
+      </button>
+    </div>
+</div>
+  </div>
+
+</div>
+
+
+
+
+<div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+
+
+
+
+  <div class="z-1 position-absolute p-3 mb-2 bg-primary text-white sale">
+    <a><button class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+      Nhận 15% chiết khấu chào mừng trên đơn hàng đầu tiên!
+
+  </div>
+  </a>
+  <div class="carousel-inner">
+    <div class="carousel-item active ">
+      <img
+        src="https://media-cdn.oriflame.com/digitalPromotionsMedia/images/banner-media/VX/20311197/20323804.jpg?version=1&w=900&bc=%23f5f5f5&ib=%23f5f5f5&q=90&imageFormat=WebP"
+        class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img
+        src="https://media-cdn.oriflame.com/digitalPromotionsMedia/images/banner-media/VX/20311197/20323804.jpg?version=1&w=900&bc=%23f5f5f5&ib=%23f5f5f5&q=90&imageFormat=WebP"
+        class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img
+        src="https://media-cdn.oriflame.com/digitalPromotionsMedia/images/banner-media/VX/20311197/20323804.jpg?version=1&w=900&bc=%23f5f5f5&ib=%23f5f5f5&q=90&imageFormat=WebP"
+        class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+
+
+
+
+<script src="main.js"></script>
+</body>
+
+</html>
