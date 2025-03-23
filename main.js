@@ -8,6 +8,16 @@ app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
 });
 
+// app.js - Mã client-side (chạy trong trình duyệt)
+
+document.addEventListener("DOMContentLoaded", function() {
+    document.querySelector('.btn-close').addEventListener('click', function() {
+        console.log('Button clicked');
+        // Thực hiện hành động khi nút được bấm
+    });
+});
+
+
 document.querySelector('.btn-close').addEventListener('click', function() {
 document.querySelector('.sale').style.display='none';
 
