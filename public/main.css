@@ -43,6 +43,18 @@ body {
     margin-left: 2rem;
 }
 
+.btnDKDN a
+{
+    text-decoration: none;
+    color: white;
+    
+}
+
+.btnDKDN button
+{
+    font-weight: bold;
+}
+
 .menuGH
 {
     
