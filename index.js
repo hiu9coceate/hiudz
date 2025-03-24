@@ -6,12 +6,9 @@ const port = process.env.PORT || 3000;
 // Phục vụ các file tĩnh từ thư mục public
 app.use(express.static('public'));
 
-// Hoặc nếu bạn muốn phục vụ từ thư mục gốc
-app.use(express.static('./'));
-
-// Route chính, trả về file index.html
+// Route chính, trả về file index.html trong thư mục public
 app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, 'index.html'));
+  res.sendFile(path.join(__dirname, 'public', 'index.html')); // Đảm bảo đường dẫn đúng
 });
 
 // Khởi động server
