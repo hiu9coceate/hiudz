@@ -8,7 +8,7 @@ app.use(express.static('public'));
 
 // Route chính, trả về file index.html trong thư mục public
 app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, 'public', 'index.html')); // Đảm bảo đường dẫn đúng
+  res.sendFile(path.join(__dirname,  'index.html')); // Đảm bảo đường dẫn đúng
 });
 
 // Khởi động server
